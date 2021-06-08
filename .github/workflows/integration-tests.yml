@@ -1,6 +1,6 @@
 name: "Trigger Integration tests"
 on:
-  pull_request-target:
+  pull_request_target:
     types: [labeled]
     branches:
       - master
