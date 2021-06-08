@@ -5,6 +5,11 @@ on:
     branches:
       - master
       - 'releases/*'
+  pull_request:
+    branches:
+      - master
+      - 'releases/*'
+      
 jobs: 
     trigger-integration-tests:
       name: Trigger Integration tests
