@@ -15,7 +15,7 @@ jobs:
       steps:
         - name: print event object
           run: |
-            echo ${{ github.event.pull_request }}
+            echo ${{ toJSON(github.event.pull_request) }}
           
         - name: Check out repository
           uses: actions/checkout@v2
