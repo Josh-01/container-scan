@@ -6,12 +6,17 @@ on:
       - master
       - 'releases/*'
       
+
 jobs: 
     trigger-integration-tests:
       name: Trigger Integration tests
-      if: contains(github.event.pull_request.labels.*.name, 'safe to run test')
+      if: contains(github.event.pull_request.labels.*.name, 'safe to run test') #AND contains(github.event.pull_request.
       runs-on: ubuntu-latest
       steps:
+        - name: print event object
+          run: |
+            bash echo ${{ github.event.pull_request ]]
+          
         - name: Check out repository
           uses: actions/checkout@v2
           with:
