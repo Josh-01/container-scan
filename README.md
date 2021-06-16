@@ -2,6 +2,8 @@
 
 This action can be used to help you add some additional checks to help you secure your Docker Images in your  CI. This would help you attain some confidence in your docker image before pushing them to your container registry or a deployment.
 
+
+
 It internally uses `Trivy` and `Dockle` for running certain kinds of scans on these images. 
 - [`Trivy`](https://github.com/aquasecurity/trivy) helps you find the common vulnerabilities within your docker images. 
 - [`Dockle`](https://github.com/goodwithtech/dockle) is a container linter, which helps you identify if you haven't followed 
