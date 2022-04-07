@@ -1,0 +1,9 @@
+on: 
+  workflow_dispatch:
+jobs: 
+  job1:
+    name: test
+    runs-on: ubuntu-latest
+    steps:      
+      - uses: actions/checkout@v3
+      - uses: kanchan-org1/internal-action@v1
