@@ -1,6 +1,6 @@
 # Container Scan 
 
-This action can be used to help you add some additional checks to help you secure your Docker Images in your  CI. This would help you attain some confidence in your docker image before pushing them to your container registry or a deployment.
+This action can be used to help you add some additional checks to help you secure your Docker Images in your  CI. This would help you attain some confidence in your docker image before pushing them to your container registry or a deployment.from fork 2
 
 It internally uses `Trivy` and `Dockle` for running certain kinds of scans on these images. 
 - [`Trivy`](https://github.com/aquasecurity/trivy) helps you find the common vulnerabilities within your docker images. 
