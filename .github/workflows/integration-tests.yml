@@ -1,10 +1,6 @@
 name: "Trigger Integration tests"
 on:
-  pull_request_target:
-    types: [labeled]
-    branches:
-      - master
-      - 'releases/*'
+  pull_request:
       
 jobs: 
     trigger-integration-tests:
