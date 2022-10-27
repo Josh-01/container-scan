@@ -21,6 +21,6 @@ jobs:
     if: github.event.label.name == 'bug'
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'The label was bug'
+      - run: exit 1
     
         
