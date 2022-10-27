@@ -19,6 +19,8 @@ jobs:
   to-be-skipped:
     name: Skip job
     runs-on: ubuntu-latest
-    if: github.event.label.name == 'bug'
+    steps:
+      - name: Skip step
+        run: exit 1
     
         
