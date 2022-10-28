@@ -1,6 +1,6 @@
 name: "Trigger Integration tests"
 on:
-  pull_request:
+  pull_request_target:
       
 jobs: 
   trigger-integration-tests:
