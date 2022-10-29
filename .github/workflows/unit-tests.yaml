@@ -4,6 +4,7 @@ on: # rebuild any PRs and main branch changes
 
 jobs:
   build: # make sure build/ci works properly
+    if: ${{ vars.PRETTIFY_JS == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
