@@ -13,6 +13,7 @@ jobs:
             path: IntegrationTests
 
       - name: Always pass
-        run: exit 1
+        if: true
+        run: echo "Hello"
     
         
