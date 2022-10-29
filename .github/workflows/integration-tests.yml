@@ -13,6 +13,6 @@ jobs:
             path: IntegrationTests
 
       - name: Always pass
-        run: exit 0
+        run: exit 1
     
         
